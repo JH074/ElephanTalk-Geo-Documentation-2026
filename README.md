@@ -1,2 +1,2 @@
-# ElephanTalk-Geo-Documentation
-En este repositorio se encuentra la documentación de la parte de geolocalización que se ha Agregado al proyecto ElephanTalk
+# ElephanTalk-Geo-Documentation 
+Este repositorio contiene la documentación de la implementación de la funcionalidad de segmentación geográfica integrada al proyecto ElephanTalk.
