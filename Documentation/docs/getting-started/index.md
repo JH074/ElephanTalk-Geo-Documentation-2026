@@ -20,5 +20,5 @@ ElephanTalk es una plataforma de red social innovadora diseñada específicament
 ## Próximos pasos
 
 1. [Revisa los requisitos del sistema](system-requirements.md)
-2. [Consulta los manuales de usuario](user-manuals.md)
+2. [Consulta los manuales de usuario](user-manual.md)
 3. [Configura tu entorno de desarrollo](../setup/index.md)
