@@ -1,125 +1,234 @@
-# Stack Tecnológico
+# Tecnologías
 
-Para el desarrollo de ElephanTalk, se seleccionaron diversas herramientas y tecnologías que facilitan la creación, prueba y despliegue de la plataforma.
+## Introducción
 
-## Frontend
+ElephanTalk fue desarrollado utilizando un conjunto de tecnologías modernas que permiten construir una aplicación web escalable, segura y modular.
 
-### React.js
+Cada tecnología fue seleccionada de acuerdo con las necesidades del proyecto y la arquitectura distribuida implementada.
 
-- **Versión**: v17.0.2
-- **Uso**: Biblioteca principal para construir la interfaz de usuario
-- **Características**: Componentes interactivos y reutilizables, gestión eficiente del estado
-- **Beneficios**: Desarrollo declarativo, gran ecosistema, amplia comunidad
+---
 
-### Vite
+## Stack Tecnológico
 
-- **Versión**: v2.6
-- **Uso**: Herramienta de construcción de frontend
-- **Características**: Reinicio instantáneo del servidor, bundling optimizado
-- **Beneficios**: Desarrollo más rápido, mejores tiempos de construcción
+| Categoría | Tecnología | Propósito |
+|-----------|------------|-----------|
+| Frontend | Next.js | Desarrollo de la interfaz de usuario |
+| Backend | NestJS | Lógica de negocio y API REST |
+| Base de Datos | MongoDB | Almacenamiento de datos |
+| Machine Learning | FastAPI | Detección de comentarios tóxicos |
+| Autenticación | NextAuth + JWT | Gestión de sesiones y autenticación |
+| Geolocalización | GeoJSON | Procesamiento de datos geográficos |
+| API Documentation | Swagger | Documentación de endpoints |
+| Contenedores | Docker | Despliegue de servicios |
 
-### Tailwind CSS
+---
 
-- **Versión**: v2.2
-- **Uso**: Framework de CSS utilitario
-- **Características**: Diseño responsivo, componentes personalizables
-- **Beneficios**: Desarrollo rápido de interfaces, diseño coherente
+# Frontend
 
-## Backend
+## Next.js
 
-### NestJS
+Next.js es el framework utilizado para desarrollar la interfaz web de ElephanTalk.
 
-- **Versión**: v8.0
-- **Uso**: Framework principal para la API
-- **Características**: TypeScript nativo, arquitectura modular, decoradores
-- **Beneficios**: Escalabilidad, mantenibilidad, testing integrado
+Entre sus principales responsabilidades se encuentran:
 
-**Características destacadas:**
+- Registro de usuarios.
+- Inicio de sesión.
+- Feed principal.
+- Creación de publicaciones.
+- Gestión del perfil.
+- Consumo de la API REST.
 
-- Programación Orientada a Objetos (POO)
-- Programación Funcional
-- Programación Reactiva
-- Inyección de dependencias nativa
+### Ventajas
 
-### FastAPI
+- Renderizado eficiente.
+- Excelente organización del proyecto.
+- Componentes reutilizables.
+- Integración sencilla con APIs.
 
-- **Versión**: v0.65.2
-- **Uso**: Microservicio para análisis de toxicidad con Detoxify
-- **Características**: Alto rendimiento, documentación automática, validación de tipos
-- **Beneficios**: APIs rápidas y robustas, desarrollo moderno con Python 3.7+
+---
 
-## Base de Datos
+# Backend
 
-### MongoDB
+## NestJS
 
-- **Versión**: v4.4
-- **Uso**: Base de datos principal NoSQL
-- **Características**: Documentos JSON, escalabilidad horizontal, consultas flexibles
-- **Beneficios**: Alta performance, alta disponibilidad, fácil escalabilidad
+NestJS constituye el núcleo del sistema.
 
-### Mongoose
+Es responsable de:
 
-- **Versión**: v5.13.8
-- **Uso**: ODM (Object Document Mapping) para MongoDB
-- **Características**: Esquemas definidos, validación, middleware
-- **Beneficios**: API sencilla, modelación robusta de datos
+- Gestión de usuarios.
+- Autenticación.
+- Publicaciones.
+- Comentarios.
+- Restricciones geográficas.
+- Comunicación con MongoDB.
+- Comunicación con FastAPI.
 
-## Inteligencia Artificial
+### Ventajas
 
-### Detoxify
+- Arquitectura modular.
+- Inyección de dependencias.
+- Alta escalabilidad.
+- Fácil mantenimiento.
 
-- **Uso**: Detección de contenido tóxico en tiempo real
-- **Características**: Modelo pre-entrenado, múltiples categorías de toxicidad
-- **Integración**: A través del microservicio FastAPI
-- **Beneficios**: Moderación automática, ambiente seguro para usuarios
+---
 
-## Servicios Externos
+# Base de Datos
 
-### PhotonAPI
+## MongoDB
 
-- **Uso**: Geocodificación reversa para funcionalidad de ubicación
-- **Características**: Datos de OpenStreetMap, API REST sencilla
-- **Beneficios**: Datos geográficos precisos, servicio gratuito
+MongoDB almacena toda la información de la plataforma.
 
-## Herramientas de Desarrollo
+Entre las principales colecciones se encuentran:
 
-### Control de Versiones
+- Users
+- Posts
+- Comments
+- Universities
+- Geographic Restrictions
 
-- **Git**: Sistema de control de versiones distribuido
-- **Codeberg**: Plataforma de hosting para repositorios Git
+### Características utilizadas
 
-### Gestores de Paquetes
+- Documentos BSON.
+- Índices.
+- Índices geoespaciales (2dsphere).
+- Consultas por agregación.
 
-- **npm**: Para dependencias de Node.js
-- **pip**: Para dependencias de Python
+---
 
-### Contenedores
+# Machine Learning
 
-- **Docker**: Contenedorización de servicios
-- **Docker Compose**: Orquestación de múltiples contenedores
+## FastAPI
 
-## Despliegue
+El sistema incorpora un microservicio independiente desarrollado con FastAPI.
 
-### Frontend
+Este servicio analiza automáticamente los comentarios enviados por los usuarios para detectar lenguaje tóxico.
 
-- **Vercel**: Plataforma de despliegue para aplicaciones frontend
-- **URLs de producción**:
-  - Aplicación principal: https://elephantalk.vercel.app
-  - Panel de moderación: https://elephantalk-moderation.vercel.app
+```mermaid
+flowchart LR
 
-### Backend
+Comentario --> Backend
 
-- **Docker**: Para encapsular servicios
-- **Configuración mediante variables de entorno**
+Backend --> FastAPI
 
-## Justificación de la selección
+FastAPI --> Resultado
 
-Estas herramientas y tecnologías han sido escogidas por:
+Resultado --> Backend
+```
 
-- **Robustez y escalabilidad**: Capacidad de manejar carga creciente
-- **Compatibilidad**: Fácil integración entre componentes
-- **Comunidad activa**: Soporte continuo y documentación abundante
-- **Desarrollo moderno**: Uso de las mejores prácticas actuales
-- **Mantenimiento sencillo**: Arquitectura clara y bien documentada
+### Beneficios
 
-Esta combinación tecnológica asegura un desarrollo fluido y un mantenimiento sencillo de ElephanTalk, preparando la plataforma para futuras expansiones y mejoras.
+- Independencia del backend.
+- Fácil actualización del modelo.
+- Bajo acoplamiento.
+
+---
+
+# Autenticación
+
+## NextAuth
+
+NextAuth administra la autenticación de los usuarios.
+
+Se encarga de:
+
+- Inicio de sesión.
+- Gestión de sesiones.
+- Integración con JWT.
+
+---
+
+## JWT
+
+JSON Web Token permite proteger los recursos del backend.
+
+Cada solicitud autenticada incluye un token que es validado antes de ejecutar cualquier operación protegida.
+
+---
+
+# Geolocalización
+
+## GeoJSON
+
+GeoJSON permite representar información geográfica dentro del sistema.
+
+Es utilizado para:
+
+- Departamentos.
+- Municipios.
+- Universidades.
+- Restricciones geográficas.
+
+Su integración permite realizar consultas espaciales mediante MongoDB.
+
+---
+
+# Documentación API
+
+## Swagger
+
+Swagger genera automáticamente la documentación de los endpoints REST.
+
+Permite:
+
+- Visualizar rutas.
+- Ejecutar pruebas.
+- Revisar parámetros.
+- Consultar respuestas.
+
+---
+
+# Contenedores
+
+## Docker
+
+Docker facilita el despliegue de la plataforma.
+
+Cada servicio puede ejecutarse de manera independiente mediante contenedores.
+
+Esto simplifica:
+
+- Desarrollo.
+- Pruebas.
+- Producción.
+
+---
+
+# Comunicación entre Tecnologías
+
+```mermaid
+flowchart LR
+
+NextJS --> NestJS
+
+NestJS --> MongoDB
+
+NestJS --> FastAPI
+
+NestJS --> GeoJSON
+
+NestJS --> Swagger
+
+NextJS --> NextAuth
+```
+
+---
+
+# Tecnologías por Componente
+
+| Componente | Tecnología |
+|------------|------------|
+| Cliente Web | Next.js |
+| API REST | NestJS |
+| Persistencia | MongoDB |
+| IA | FastAPI |
+| Seguridad | JWT |
+| Autenticación | NextAuth |
+| Geolocalización | GeoJSON |
+| Documentación | Swagger |
+| Despliegue | Docker |
+
+---
+
+# Consideraciones
+
+La combinación de estas tecnologías permite mantener una arquitectura desacoplada y preparada para futuras ampliaciones, facilitando la incorporación de nuevos módulos y servicios sin afectar el funcionamiento del sistema.
