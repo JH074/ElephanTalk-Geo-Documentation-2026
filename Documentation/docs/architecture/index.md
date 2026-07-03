@@ -10,9 +10,7 @@ Esta arquitectura facilita el mantenimiento del sistema, mejora la escalabilidad
 
 ## Arquitectura General
 
-> Sustituya la siguiente imagen por el diagrama oficial de arquitectura del proyecto.
-
-![Arquitectura General](img/architecture.png)
+![Arquitectura General](..\img\architecture.png)
 
 ---
 
