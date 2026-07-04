@@ -1,5 +1,7 @@
 # Auditoría y Compatibilidad de Licencias
 
+> ElephanTalk se desarrolla sobre un proyecto de código abierto bajo licencia **Apache 2.0**
+
 ## Introducción
 
 ElephanTalk hace uso de diversas bibliotecas, frameworks y herramientas de terceros tanto en el frontend como en el backend. Con el objetivo de verificar el cumplimiento de las licencias de software utilizadas por estas dependencias, se realizó una auditoría de licencias durante el desarrollo del proyecto.

@@ -61,7 +61,7 @@ nav:
     - V3 - Visibilidad Geográfica: versions/v3-geographic-visibility.md
     - Comparación: versions/comparison.md
   - Repositorios: repositories.md
-  - Auditoría y compatibilidad de licencias:
+  - Auditoría y Compatibilidad de licencias:
     - Resumen: compatibility/index.md
     - Compatibilidad: compatibility/license-compatibility.md
   - Licencia: license.md
