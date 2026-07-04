@@ -1,0 +1,11 @@
+.md-typeset h1{
+    font-weight:700;
+}
+
+.md-typeset h2{
+    font-weight:600;
+}
+
+.hero{
+    text-align:center;
+}
