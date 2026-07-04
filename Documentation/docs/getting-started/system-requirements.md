@@ -45,17 +45,119 @@ Para desarrollar y mantener el sistema de ElephanTalk, se deben cumplir con los 
 - **Descarga**: [Python 3.10.11](https://www.python.org/downloads/release/python-31011/)
 - **Recomendación**: Mantener actualizado dentro de la serie 3.10
 
-#### Java
-- **Versión**: Java 11+
-- **Uso**: Servicio PhotonAPI para geolocalización
-- **Descarga**: [Oracle JDK 11](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
-- **Recomendación**: Usar una versión de Java igual o mayor a la 11
-
 ### Frameworks y herramientas
 
 - **NestJS**: Versión estable más reciente compatible con Node.js 20.x
 - **React**: Versión estable más reciente compatible con Node.js 20.x  
 - **FastAPI**: Versión estable más reciente compatible con Python 3.10
+- **GeoJson**: Tener registrado el geojson en el schema correspondiente de mongo db, respetando el modelo de dicho schema ejemplo:
+````
+[
+    {
+        "featureType": "department",
+        "shapeName": "San Salvador",
+        "shapeID": "SV-ADM1-01",
+        "shapeGroup": "ElSalvadorMap",
+        "adminLevel": "ADM1",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -89.3,
+                        13.7
+                    ],
+                    [
+                        -89.2,
+                        13.7
+                    ],
+                    [
+                        -89.2,
+                        13.6
+                    ],
+                    [
+                        -89.3,
+                        13.6
+                    ],
+                    [
+                        -89.3,
+                        13.7
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "population": 1000000,
+            "source": "gov-geojson"
+        }
+    },
+    {
+        "featureType": "municipality",
+        "shapeName": "Municipio Ejemplo",
+        "shapeID": "SV-MUN-001",
+        "shapeGroup": "ExampleGroup",
+        "adminLevel": "ADM2",
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [
+                            -89.25,
+                            13.7
+                        ],
+                        [
+                            -89.24,
+                            13.7
+                        ],
+                        [
+                            -89.24,
+                            13.69
+                        ],
+                        [
+                            -89.25,
+                            13.69
+                        ],
+                        [
+                            -89.25,
+                            13.7
+                        ]
+                    ]
+                ],
+                [
+                    [
+                        [
+                            -89.26,
+                            13.71
+                        ],
+                        [
+                            -89.255,
+                            13.71
+                        ],
+                        [
+                            -89.255,
+                            13.705
+                        ],
+                        [
+                            -89.26,
+                            13.705
+                        ],
+                        [
+                            -89.26,
+                            13.71
+                        ]
+                    ]
+                ]
+            ]
+        },
+        "properties": {
+            "population": 12345,
+            "source": "example-data",
+            "notes": "MultiPolígono compuesto por dos polígonos (islas/enclaves)"
+        }
+    }
+]
+````
 
 ### Herramientas de desarrollo
 

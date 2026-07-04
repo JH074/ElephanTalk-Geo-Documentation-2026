@@ -15,7 +15,7 @@ ElephanTalk es una plataforma de red social innovadora diseñada específicament
 - **Moderación automática**: Integración del modelo Detoxify para análisis de contenido tóxico en tiempo real
 - **Ambiente seguro**: Sistema de reportes y revisión manual por moderadores
 - **Comunidad específica**: Enfocada en estudiantes de informática y tecnología
-- **Geolocalización**: Separación de contenido por zona local o el resto del país
+- **Geolocalización**: Separación de contenido por departamento, municipio o universidad
 
 ## Próximos pasos
 
