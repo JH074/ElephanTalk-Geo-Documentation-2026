@@ -66,7 +66,13 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+### Modificaciones realizadas
 
+La presente documentación corresponde a una versión derivada del proyecto original **ElephanTalk**. Durante el ciclo académico 01/2026 se realizaron modificaciones y ampliaciones tanto al sistema como a su documentación técnica por parte del equipo de desarrollo del proyecto, manteniendo la licencia Apache License 2.0 establecida por los autores originales.
+
+**Equipo responsable de esta versión**
+
+- Equipo de desarrollo: Grupo 4 ElephanTalk Team 2026
 
 ## Contribuciones
 
@@ -80,3 +86,12 @@ Nota: Este proyecto incluye:
 
 Este componente es compatible con Apache 2.0.
 ```
+
+## Licencia de la Documentación
+
+La documentación técnica de ElephanTalk también se distribuye bajo los términos de la **Apache License 2.0**, con el objetivo de mantener consistencia con la licencia del proyecto de software.
+
+Esto permite consultar, copiar, modificar y redistribuir la documentación, siempre que se conserven los avisos de copyright y la licencia correspondiente.
+
+La documentación forma parte integral del proyecto y está sujeta a los mismos términos de distribución que el código fuente.
+

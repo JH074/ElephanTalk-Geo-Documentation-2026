@@ -1,55 +1,76 @@
-# Compatibilidad de Licencias
+# Auditoría y Compatibilidad de Licencias
 
-ElephanTalk utiliza múltiples dependencias y librerías de terceros, por lo que es importante asegurar la compatibilidad legal de todas las licencias involucradas.
+## Introducción
 
-## Documentación de Licencias
+ElephanTalk hace uso de diversas bibliotecas, frameworks y herramientas de terceros tanto en el frontend como en el backend. Con el objetivo de verificar el cumplimiento de las licencias de software utilizadas por estas dependencias, se realizó una auditoría de licencias durante el desarrollo del proyecto.
 
-### Análisis de Compatibilidad
+Esta verificación permite mantener un inventario actualizado de las licencias utilizadas y facilitar futuras revisiones cuando se incorporen nuevas dependencias al sistema.
 
-El proyecto ha sido analizado para asegurar que todas las licencias de las dependencias sean compatibles con la licencia principal del proyecto.
 
-🔗 **[Documento de Compatibilidad de Licencias](https://drive.google.com/file/d/1XWfnQ94D2FU2hRjfB68xmK-rrG4RnC6i/view?usp=sharing)**
+## Herramienta utilizada
 
-### Escaneo de Licencias
+La auditoría fue realizada utilizando **ScanCode Toolkit**, una herramienta de código abierto especializada en el análisis de licencias, derechos de autor y paquetes de software.
 
-Se ha realizado un escaneo completo de todas las dependencias del proyecto para identificar y documentar las licencias utilizadas.
+El análisis fue ejecutado sobre los componentes del frontend y backend con el fin de identificar las licencias presentes en las dependencias del proyecto y generar reportes para su posterior revisión.
 
-🔗 **[Documento de Escaneo de Licencias](https://drive.google.com/file/d/1rm_bZgwtU5UqfLoGs-jiXyQvV1b_oSwX/view?usp=sharing)**
 
-## Principales Tecnologías y sus Licencias
+## Principales tecnologías analizadas
+
+Las tecnologías principales utilizadas por ElephanTalk emplean licencias ampliamente utilizadas dentro del ecosistema de software libre y de código abierto.
 
 ### Frontend
-- **React.js** - MIT License
-- **Tailwind CSS** - MIT License
-- **Vite** - MIT License
+
+| Tecnología | Licencia |
+|------------|----------|
+| React | MIT |
+| Vite | MIT |
+| Tailwind CSS | MIT |
 
 ### Backend
-- **NestJS** - MIT License
-- **FastAPI** - MIT License
-- **MongoDB** - Server Side Public License (SSPL)
-- **Mongoose** - MIT License
 
-### Modelo de IA
-- **Detoxify** - Apache 2.0 License
+| Tecnología | Licencia |
+|------------|----------|
+| NestJS | MIT |
+| FastAPI | MIT |
+| Mongoose | MIT |
 
-## Consideraciones Legales
+### Inteligencia Artificial
 
-### Compatibilidad
-- La mayoría de las dependencias utilizan licencias MIT, que son altamente compatibles
-- Se ha verificado que no existen conflictos entre las licencias
-- El proyecto puede distribuirse bajo una licencia compatible
+| Tecnología | Licencia |
+|------------|----------|
+| Detoxify | Apache License 2.0 |
 
-### Recomendaciones
-- Mantener actualizado el análisis de licencias con nuevas dependencias
-- Revisar regularmente los términos de licencia de las dependencias principales
-- Documentar cualquier cambio significativo en las licencias
 
-## Proceso de Verificación
+## Evidencias de la auditoría
 
-1. **Identificación** de todas las dependencias
-2. **Análisis** de compatibilidad de licencias
-3. **Documentación** de hallazgos
-4. **Resolución** de conflictos potenciales
-5. **Mantenimiento** continuo del análisis
+Como evidencia del proceso de auditoría se incluyen los reportes generados durante el análisis con ScanCode Toolkit.
 
-Para obtener información detallada sobre licencias específicas, consulta los documentos vinculados anteriormente.
+Los archivos pueden consultarse en el siguiente repositorio documental:
+
+🔗 **[Auditoría de Licencias](https://ucaedusv-my.sharepoint.com/:f:/g/personal/00162622_uca_edu_sv/IgBRe9gkKkepRLlGaYVuOnrUAUEpLkqm14_l1EtbdGIKC-U?e=EHbMxe)**
+
+Entre los archivos disponibles se encuentran:
+
+- `floss-license-slide.pdf`
+- `scan_frontend.json`
+- `scan_backend.json`
+- `scan_frontend.sqlite`
+- `scan_backend.sqlite`
+- `scan-frontend-summary.log.txt`
+
+Estos archivos contienen el detalle completo del análisis realizado sobre las dependencias del proyecto.
+
+
+## Recomendaciones
+
+Para mantener actualizado el cumplimiento de licencias del proyecto se recomienda:
+
+- Ejecutar nuevamente la auditoría después de agregar nuevas dependencias.
+- Revisar las licencias antes de actualizar paquetes principales.
+- Conservar los reportes de auditoría junto con la documentación técnica del sistema.
+- Documentar cualquier cambio significativo relacionado con las licencias de las dependencias.
+
+
+## Conclusión
+
+La auditoría realizada proporciona un registro del estado de las licencias de las dependencias utilizadas por ElephanTalk y constituye una referencia técnica para el mantenimiento del proyecto y futuras actualizaciones.

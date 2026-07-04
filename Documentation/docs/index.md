@@ -42,7 +42,7 @@ Esta documentación corresponde a la versión de ElephanTalk del ciclo 01/2026. 
 
 | Versión | Descripción |
 |----------|-------------|
-| V1 | Implementación inicial de la plataforma y Integración de Machine Learning. |
+| V1 | Implementación inicial de la plataforma e Integración de Machine Learning. |
 | V2 | Integración de geolocalización. |
 | V3 - Visibilidad Geográfica | Segmentación de publicaciones por universidad, departamento y nivel nacional. |
 
