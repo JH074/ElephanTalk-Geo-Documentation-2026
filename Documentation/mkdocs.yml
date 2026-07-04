@@ -44,7 +44,6 @@ nav:
     - Resumen: setup/index.md
     - Instalación Frontend: setup/frontend-setup.md
     - Instalación Backend: setup/backend-setup.md
-    - Instalación PhotonAPI: setup/photon-api.md 
   - Manual Técnico:
     - Introducción: technical/index.md
     - Frontend: technical/frontend.md

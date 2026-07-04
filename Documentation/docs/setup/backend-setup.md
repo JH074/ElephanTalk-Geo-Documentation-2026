@@ -6,7 +6,6 @@ Este proyecto consiste en dos servicios backend: una API de NestJS y una API de 
 
 - [Docker](https://www.docker.com/get-started)
 - [Docker Compose](https://docs.docker.com/compose/install/)
-- [Java 11+](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html) (para PhotonAPI)
 
 ## Configuración de Variables de Entorno
 
@@ -59,7 +58,6 @@ Una vez ejecutándose, los servicios estarán disponibles en:
 
 - **NestJS API**: `http://localhost:3000`
 - **FastAPI Service**: `http://localhost:8000`
-- **PhotonAPI Service**: `http://localhost:2322` (ver [configuración específica](photon-api.md))
 
 ## Arquitectura Docker Compose
 

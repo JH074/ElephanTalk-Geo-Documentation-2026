@@ -17,7 +17,7 @@ La estructura de los repositorios es la siguiente:
 
 - API principal desarrollada con NestJS
 - Microservicio de moderación con FastAPI
-- Microservicio de geocoder con PhotonAPI
+- Procesamiento de geolocalización mediante MongoDB y GeoJSON
 - Integración con modelo Detoxify
 - Panel de administración y moderación
 - Interfaz para revisión manual de contenido

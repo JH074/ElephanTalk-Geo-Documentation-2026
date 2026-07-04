@@ -10,7 +10,6 @@ ElephanTalk consiste en múltiples servicios que trabajan juntos:
 - **Panel de moderación**: Interfaz administrativa
 - **API NestJS**: Servicio backend principal
 - **API FastAPI**: Microservicio de moderación con Detoxify
-- **PhotonAPI**: Servicio de geolocalización
 
 ## Prerrequisitos
 
@@ -18,7 +17,6 @@ Antes de comenzar, asegúrate de tener instalado:
 
 - [Node.js 20.x](../getting-started/system-requirements.md#nodejs)
 - [Python 3.10](../getting-started/system-requirements.md#python)
-- [Java 11+](../getting-started/system-requirements.md#java)
 - [Docker y Docker Compose](../getting-started/system-requirements.md#contenedores)
 
 ## Guías de configuración
@@ -29,14 +27,10 @@ Configuración de la aplicación React principal y el panel de moderación.
 ### [Backend](backend-setup.md)  
 Configuración de los servicios NestJS y FastAPI con Docker.
 
-### [PhotonAPI](photon-api.md)
-Configuración del servicio de geolocalización.
-
 ## Orden de configuración recomendado
 
-1. **PhotonAPI**: Configura primero el servicio de geolocalización
-2. **Backend**: Levanta los servicios de API 
-3. **Frontend**: Configura y ejecuta las aplicaciones React
+1. **Backend**: Levanta los servicios de API (NestJS y FastAPI) mediante Docker Compose
+2. **Frontend**: Configura y ejecuta las aplicaciones React
 
 ## URLs de desarrollo por defecto
 
@@ -46,7 +40,6 @@ Una vez configurado correctamente, tendrás acceso a:
 - **Panel de moderación**: http://localhost:5174 (o puerto asignado)
 - **API NestJS**: http://localhost:3000
 - **API FastAPI**: http://localhost:8000
-- **PhotonAPI**: http://localhost:2322
 
 ## Solución de problemas
 

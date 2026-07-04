@@ -77,7 +77,6 @@ Al contribuir al proyecto ElephanTalk, los colaboradores aceptan que sus contrib
 Nota: Este proyecto incluye:
 
 - Leaflet (BSD 2-Clause License) https://leafletjs.com
-- Photon API (BSD 2-Clause License) https://photon.komoot.io/
 
-Estos componentes son compatibles con Apache 2.0.
+Este componente es compatible con Apache 2.0.
 ```
