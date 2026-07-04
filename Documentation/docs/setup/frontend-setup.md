@@ -25,6 +25,8 @@ VITE_PHOTON_API_URL=""
 - VITE_POSTS_PER_PAGE: Número de posts a cargar por vez (recomendado: 10)
 - VITE_PHOTON_API_URL: URL de PhotonAPI (por defecto: ```http://localhost:2322```)
 
+*Nota de Arquitectura: Si el frontend se ejecuta sobre Next.js (como se especifica en el manual de arquitectura) y no sobre un SPA estándar de React con Vite, asegúrate de renombrar los prefijos de las variables en tu archivo `.env` de `VITE_` a `NEXT_PUBLIC_` (ej. `NEXT_PUBLIC_API_URL`) para que Next.js pueda exponerlas en el lado del cliente, además de configurar las variables correspondientes para `NextAuth` (`NEXTAUTH_URL` y `NEXTAUTH_SECRET`).*
+
 ### Instalación de dependencias
 
 ```bash

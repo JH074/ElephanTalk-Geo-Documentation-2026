@@ -13,7 +13,8 @@ Este proyecto consiste en dos servicios backend: una API de NestJS y una API de 
 Crear el archivo `.env` en la raíz del proyecto de la API de NestJS (`./API/.env`):
 
 ```plaintext
-MONGO_URI="mongodb://localhost:27017/tu-base-de-datos"
+# Usa host.docker.internal en lugar de localhost si MongoDB se ejecuta localmente en tu máquina host
+MONGO_URI="mongodb://host.docker.internal:27017/tu-base-de-datos"
 PORT=3000
 JWT_SECRET="tu-secreto-jwt"
 TOXICITY_URL="http://fastapi-service:8000"
@@ -22,7 +23,7 @@ TOXICITY_THRESHOLD=0.25
 
 ### Descripción de Variables
 
-- **MONGO_URI**: Cadena de conexión a MongoDB
+- **MONGO_URI**: Cadena de conexión a MongoDB. *Nota: Si estás ejecutando la API en Docker y tu base de datos corre directamente en tu máquina host (fuera de Docker), usa `mongodb://host.docker.internal:27017/` en lugar de `localhost` en macOS/Windows, o la IP de la interfaz puente `172.17.0.1` en Linux.*
 - **PORT**: Puerto donde ejecutará la API de NestJS
 - **JWT_SECRET**: Secreto para la firma de tokens JWT
 - **TOXICITY_URL**: URL del servicio de FastAPI para análisis de toxicidad
